@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Induwara's Portfolio Website</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/fec4134f39.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="./Images/High Resolution Logo - Transparent Background (1).png" class="logo">
+                    <ul>
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#contact">Contact</a></li>
+
+                    </ul>
+                </nav>
+                <div class="header-text">
+                    <h3>Hello!</h3>
+                    <h1>I'm <span>Induwara.</span></h1>
+                    <p>Web designer | UI/UX designer</p>
+                </div>
+            </div>
+        </div>
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="./Images/potrait.JPG">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>I am Induwara Sithum Siriwardana. I was born in 24th of January 2002. I'm a Sri Lankan 
+                            citizen. I currently live in a city called Galle in southern Sri Lanka. I am a web designer and a 
+                            UI/UX designer. I'm now pursuing a degree in Data Science at SLTC Research University. I love to 
+                            create contents for social media as well. As a form of expression, I do graphic design and video editing.</p>
+
+                            <div class="tab-titles">
+                                <p class="tab-links active-link" onclick="opentab('skills')">Skills </p>
+                                <p class="tab-links" onclick="opentab('education')">Education </p>
+                                <p class="tab-links" onclick="opentab('experience')">Experience </p>
+                            </div>
+                            <div class="tab-contents active-tab" id="skills">
+                                <ul>
+                                    <li><span>Web Development</span><br>Web app development</li><br>
+                                    <li><span>UI / UX</span><br>Web / App interfaces</li><br>
+                                    <li><span>Graphic Designing</span><br>Photo editing / Flyer designs</li><br>
+                                </ul>
+                            </div>
+                            <div class="tab-contents" id="education">
+                                <ul>
+                                    <li><span>Richmond College</span><br>Completed studies from Primary to Advance Level (2007-2020)</li><br>
+                                    <li><span>SLTC Research University</span><br>Bsc.(hon) in Data Science (2022-2026)</li><br>
+                                    <li><span>Self studies</span><br>Have done self studies in web designing and graphic designing (2012-2024)</li><br>
+                                </ul>
+                            </div>
+                            <div class="tab-contents" id="experience">
+                                <ul>
+                                    <li><span>RITS</span><br>Worked as graphic designer (2012-2016)</li><br>
+                                    <li><span>RCMU</span><br>Web / graphic designer (2012-2016)</li><br>
+                                    <li><span>IEEE CS</span><br>Web development Experiences (2022-2024)</li><br>
+                                </ul>
+                            </div>
+                    </div>    
+                </div>
+            </div>
+        </div>
+        <div id="services">
+            <div class="container">
+                <h1 class="sub-title">My Services</h1>
+                <div class="services-list">
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2>Web Design</h2>
+                        <p>We plan, create and code internet sites and web pages, many of which combine text with sounds, pictures, graphics and video clips.</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-paintbrush"></i>
+                        <h2>Graphic Design</h2>
+                        <p>Our graphic design services include logo, flyer, business card, poster, banner, custom illustration & invitation, stationary, news letter, trade show... designs</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-crop-simple"></i>
+                        <h2>UI / UX Design</h2>
+                        <p>Our UI designes are aimed to build keen brand awareness to help your company improve customer satisfaction, improve user interaction, as well as boost your business grow and enhance.</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                    
+
+                </div>
+
+
+            </div>
+
+        </div>
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fa-solid fa-envelope"></i>sithumsiriwardana@gmail.com</p>
+                        <p><i class="fa-solid fa-phone"></i>+94777325306</p>
+                        <div class="social-icons">
+                            <a href="https://www.facebook.com/induwara.sithum.24"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="https://www.instagram.com/induwara_24"><i class="fa-brands fa-instagram"></i></i></a>
+                            <a href="https://www.twitter.com/induwara_24"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="https://web.whatsapp.com"><i class="fa-brands fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                    <div class="contact-right">
+                        <form>
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="Email" placeholder="Your Email" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit">Submit</button>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+            <div class="copyright">
+                <p>copyright <i class="fa-solid fa-copyright"></i> Induwara. Made with <i class="fa-solid fa-heart"></i> by Induwara Siriwardana.</p>
+            </div>
+        </div>
+        <script>
+
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");    
+            }
+
+        </script>
+
+    </body>
+</html>
